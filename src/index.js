@@ -3,11 +3,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // Load Components
-import App from './components/App';
-import './index.css';
+import Todos from './components/Todos';
+// import './index.css';
 
 
 ReactDOM.render(
-  <App />,
+  <Todos />,
   document.getElementById('root')
 );
