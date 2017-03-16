@@ -2,12 +2,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// Load Components
-import Todos from './components/Todos';
-// import './index.css';
+// Load components
+import Routes from './Routes';
+import './index.css';
 
-
+// Render root component
 ReactDOM.render(
-  <Todos />,
-  document.getElementById('root')
+    <Routes />,
+    document.getElementById('root')
+    
 );
+

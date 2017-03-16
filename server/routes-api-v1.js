@@ -15,12 +15,12 @@ module.exports.setup = (router, uploads, knex) => {
     // Post a new todo
     router.post('/todos', function(request, response) {
         let todo = {
-            todo: request.body.todos,
+            todo: request.body.todo,
             completed: request.body.completed ? 'yes' : 'no',
             // due_at: moment(request.body.due_at.trim()).format('YYYY-MM-DD'),
             category: request.body.category,
-            // created_at: now,
-            // updated_at: now,
+            created_at: now,
+            updated_at: now,
         }
 
         knex.insert(todo).table('todos').returning('*').then(function(data) {
